@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>🌏 Weather-Forecaster 🌏</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="weather-search-page">
+        🌏 Weather forecaster 🌍
+        <br />
+        <small class="current-time" id="date"> </small>
+      </h1>
+      <form class="search-engine" id="search-form">
+        <div class="row">
+          <div class="col-md-2">
+            <button type="search" class="btn btn-warning">
+              <i class="fas fa-search-location"> Search </i>
+            </button>
+          </div>
+          <div class="col-md-2">
+            <button type="search" class="btn btn-danger" id="my-localization">
+              Current location
+            </button>
+          </div>
+          <div class="col-md-8">
+            <input
+              type="search"
+              class="form-control"
+              id="city-input"
+              placeholder="Enter name of the city"
+              autocomplete="off"
+              autofocus="on"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="cityPrecWind">
+        <div class="row row-cols-4">
+          <div class="col-md-4">
+            <p class="bordeaux" id="city"></p>
+          </div>
+          <div class="col-md-4">
+            <div class="real-weather">
+              <div class="rain-windy">Currently:</div>
+              <footer class="realistic" id="temperature-element">...</footer>
+              <div class="rain-windy">How it is today:</div>
+              <footer class="realistic" id="weather-description">...</footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="week">
+        <div class="row">
+          <div class="col"><button class="weekdays">Mon</button></div>
+          <div class="col"><button class="weekdays">Tue</button></div>
+          <div class="col"><button class="weekdays">Wed</button></div>
+          <div class="col"><button class="weekdays">Thu</button></div>
+          <div class="col"><button class="weekdays">Fri</button></div>
+        </div>
+
+        <div class="emojis">
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/facebook/92/white-sun-behind-cloud-with-rain_1f326-fe0f.png"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/65/black-sun-with-rays_2600.png"
+                width="50"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/facebook/92/cloud_2601-fe0f.png"
+                width="50"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/facebook/92/cloud_2601-fe0f.png"
+                width="50"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/facebook/92/white-sun-with-small-cloud_1f324-fe0f.png"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="real-temperature">
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-primary">16°C</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-warning">18°C</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary">14°C</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-success">13°C</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary">15°C</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3>Designed by Iga</h3>
+    <script
+      src="https://kit.fontawesome.com/e38bc5ffca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>

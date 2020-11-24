@@ -1,0 +1,123 @@
+body {
+  font-family: "Oxygen", sans-serif;
+  max-width: 60%;
+  border: 1px solid #0069d9;
+  border-radius: 10px;
+  box-shadow: 2px 4px 2px 4px rgb(210, 228, 247, 0.8);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+h1.weather-search-page {
+  color: rgb(0, 123, 255);
+  display: block;
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
+}
+
+small {
+  opacity: 0.3;
+  font-size: medium;
+  padding: 0;
+}
+
+h2.today-is {
+  color: #0069d9;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+h2.weather-button {
+  position: relative;
+  left: 150px;
+  top: 50 px;
+}
+
+h2.city {
+  color: #0069d9;
+  text-align: center;
+  position: relative;
+  left: 75px;
+}
+
+h3 {
+  font-size: 12px;
+  opacity: 0.3;
+  text-align: center;
+  margin: 30px 20px 10px;
+}
+
+.cityPrecWind {
+  position: relative;
+  top: 30px;
+  left: 150px;
+  right: 0px;
+}
+
+.bordeaux {
+  color: rgb(0, 123, 255);
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+div.real-weather {
+  color: rgb(0, 105, 217);
+  border: 1px solid rgb(0, 105, 217, 0.3);
+  border-radius: 50px;
+  line-height: 1.25;
+  padding: 10px;
+  text-align: center;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+div.rain-windy {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer.realistic {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+div.week {
+  position: relative;
+  left: 40px;
+}
+
+button.weekdays {
+  color: rgb(0, 105, 217);
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid rgb(0, 105, 217, 0.3);
+  border-radius: 10px;
+  background-color: rgb(0, 105, 217, 0.1);
+  padding: 5px 10px;
+  margin: 10px;
+  width: 50px;
+  transition: all 150ms ease-in-out;
+}
+
+button.weekdays:hover {
+  background-color: rgb(0, 105, 217);
+  color: white;
+  cursor: pointer;
+}
+
+div.emojis {
+  position: relative;
+  left: 10px;
+}
+
+div.real-temperature {
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
